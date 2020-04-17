@@ -28,7 +28,7 @@ Fuck off:
 
 ```
 >>> from foaas import fuck
->>> print fuck.off(name='Tom', from_='Chris').text
+>>> fuck.off(name='Tom', from_='Chris').text
 Fuck off, Tom. - Chris
 ```
 
@@ -42,7 +42,7 @@ Give me some fucking JSON:
 Just get the fucking URL:
 
 ```
->>> print fuck.everything(from_='Chris').url
+>>> fuck.everything(from_='Chris').url
 http://foaas.herokuapp.com/everything/Chris
 ```
 
@@ -52,22 +52,22 @@ This needs to be fucking secure:
 >>> from foaas import Fuck
 >>> fuck = Fuck(secure=True)
 >>> fucking = fuck.life(from_='Phil')
->>> print fucking.url
+>>> fucking.url
 https://foaas.herokuapp.com/life/Phil
->>> print fucking.text
+>>> fucking.text
 Fuck my life. - Phil
 ```
 
 Give me some random fucking things:
 
 ```
->>> print fuck.random(from_='Chris').text
+>>> fuck.random(from_='Chris').text
 Fuck you very much. - Chris
->>> print fuck.random(from_='Chris').text
+>>> fuck.random(from_='Chris').text
 Fuck my life. - Chris
->>> print fuck.random(name='Tom', from_='Chris').text
+>>> fuck.random(name='Tom', from_='Chris').text
 Fuck me gently with a chainsaw, Tom. Do I look like Mother Teresa? - Chris
->>> print fuck.random(name='Tom', from_='Chris').text
+>>> fuck.random(name='Tom', from_='Chris').text
 Fuck off, Tom. - Chris
 ```
 
